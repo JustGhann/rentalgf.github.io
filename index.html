@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TemanKencan — teman ngobrol dan teman jalan untuk momen spesialmu.">
+  <title>TemanKencan — Teman untuk Momenmu</title>
+
+  <!-- Menghubungkan file HTML ini dengan stylesheet eksternal. -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Mengambil font dari Google Fonts; website tetap memakai font cadangan jika gagal dimuat. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header berisi identitas website dan navigasi menuju bagian-bagian halaman. -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="TemanKencan, kembali ke halaman utama">
+        <span class="brand-mark" aria-hidden="true">♡</span>
+        Teman<span>Kencan</span>
+      </a>
+
+      <!-- Tautan navigasi memakai id section sebagai tujuan. -->
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#home">Home</a>
+        <a href="#profil">Profil</a>
+        <a href="#price">Price</a>
+        <a class="nav-cta" href="#order">Order <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME: area pembuka dengan ajakan untuk melihat paket. -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Teman seru, cerita baru</p>
+          <h1>Karena setiap momen lebih <em>asyik</em> berdua.</h1>
+          <p class="hero-description">
+            Teman ngobrol, teman nonton, atau teman datang ke acara spesial.
+            Pilih teman yang cocok dan nikmati waktu berkualitas dengan nyaman.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#price">Lihat paket <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#profil">Kenalan dulu <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✦</span>
+            <p><strong>Teman yang tepat,</strong> untuk cerita yang hangat.</p>
+          </div>
+        </div>
+
+        <!-- Kartu visual dibuat dengan CSS, sehingga tidak memerlukan file gambar tambahan. -->
+        <div class="hero-art" aria-label="Ilustrasi dua orang sedang menghabiskan waktu bersama" role="img">
+          <div class="art-sun"></div>
+          <div class="art-card">
+            <div class="art-topline"><span>GOOD COMPANY</span><span>♡</span></div>
+            <div class="portrait">
+              <div class="portrait-hair"></div>
+              <div class="portrait-face"></div>
+              <div class="portrait-neck"></div>
+              <div class="portrait-body"></div>
+              <div class="portrait-flower">✿</div>
+            </div>
+            <div class="art-caption">
+              <span class="caption-tag">YOUR NEXT STORY</span>
+              <span class="caption-name">A little more together.</span>
+            </div>
+          </div>
+          <div class="floating-note"><span>♡</span> quality time, always</div>
+          <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>01 — TEMAN KENCAN</span>
+        <span>GOOD COMPANY, GOOD MEMORIES</span>
+      </div>
+    </section>
+
+    <!-- PROFIL: menjelaskan konsep layanan dan hal yang membuatnya nyaman. -->
+    <section class="about section-pad" id="profil">
+      <div class="container about-grid">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Profil</p>
+          <h2>Bukan soal status.<br><em>Soal kebersamaan.</em></h2>
+        </div>
+        <div class="about-content">
+          <p class="about-lead">
+            TemanKencan adalah layanan teman aktivitas untuk kamu yang ingin
+            menikmati momen tanpa harus datang sendirian.
+          </p>
+          <p class="about-text">
+            Mulai dari ngopi santai sampai menemani ke acara, kita percaya bahwa
+            obrolan menyenangkan bisa membuat hari biasa jadi istimewa. Kenalan,
+            tentukan aktivitas, lalu nikmati waktu bersama dengan saling menghargai.
+          </p>
+          <div class="values-row">
+            <div class="value-item"><span>01</span><strong>Nyaman</strong><small>Mulai dari obrolan</small></div>
+            <div class="value-item"><span>02</span><strong>Terbuka</strong><small>Jelas sejak awal</small></div>
+            <div class="value-item"><span>03</span><strong>Berbatas</strong><small>Saling menghormati</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE: pilihan paket disusun sebagai kartu agar mudah dibandingkan. -->
+    <section class="pricing section-pad" id="price">
+      <div class="container">
+        <div class="pricing-heading">
+          <div class="section-heading">
+            <p class="eyebrow">02 / Price</p>
+            <h2>Pilih waktu,<br><em>pilih ceritamu.</em></h2>
+          </div>
+          <p class="pricing-intro">Paket sederhana untuk rencana yang berbeda.<br>Semua harga di bawah adalah contoh.</p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <p class="plan-label">THE QUICK CATCH-UP</p>
+            <h3>Ngopi &amp; ngobrol</h3>
+            <p class="plan-description">Teman cerita untuk jeda kecil di tengah minggu.</p>
+            <p class="price-amount">Rp150<span>rb / 2 jam</span></p>
+            <ul class="plan-features">
+              <li><span>✓</span> Teman ngobrol santai</li>
+              <li><span>✓</span> Area publik pilihan</li>
+              <li><span>✓</span> Jadwal fleksibel</li>
+            </ul>
+            <a class="button button-outline" href="#order">Pilih paket <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="price-card price-card-featured">
+            <span class="popular-label">PALING DISUKAI</span>
+            <p class="plan-label">THE LITTLE ADVENTURE</p>
+            <h3>Jalan seharian</h3>
+            <p class="plan-description">Eksplor tempat baru dan buat memori seru.</p>
+            <p class="price-amount">Rp350<span>rb / 5 jam</span></p>
+            <ul class="plan-features">
+              <li><span>✓</span> Teman jalan &amp; aktivitas</li>
+              <li><span>✓</span> Rencana aktivitas bersama</li>
+              <li><span>✓</span> Waktu lebih leluasa</li>
+            </ul>
+            <a class="button button-primary" href="#order">Pilih paket <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="price-card">
+            <p class="plan-label">THE SPECIAL OCCASION</p>
+            <h3>Teman acara</h3>
+            <p class="plan-description">Datang dengan percaya diri ke momen penting.</p>
+            <p class="price-amount">Rp500<span>rb / 6 jam</span></p>
+            <ul class="plan-features">
+              <li><span>✓</span> Teman ke acara pilihan</li>
+              <li><span>✓</span> Briefing sebelum acara</li>
+              <li><span>✓</span> Gaya menyesuaikan acara</li>
+            </ul>
+            <a class="button button-outline" href="#order">Pilih paket <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <p class="price-footnote">* Harga belum termasuk biaya tiket, makan, transportasi, atau kebutuhan aktivitas lainnya.</p>
+      </div>
+    </section>
+
+    <!-- ORDER: formulir ini adalah tampilan front-end; belum mengirim data ke server. -->
+    <section class="order section-pad" id="order">
+      <div class="container order-grid">
+        <div class="order-copy">
+          <p class="eyebrow">03 / Order</p>
+          <h2>Yuk, rencanakan<br><em>momenmu.</em></h2>
+          <p>Ceritakan rencana kecilmu. Isi formulir ini sebagai simulasi pemesanan untuk latihan HTML dan CSS.</p>
+          <div class="order-contact"><span aria-hidden="true">✳</span><div><strong>Mulai dari obrolan</strong><small>Tentukan aktivitas dan batasan dengan jelas.</small></div></div>
+        </div>
+
+        <form class="order-form" action="#" method="get">
+          <div class="form-row">
+            <label for="nama">Nama kamu</label>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Dinda" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email aktif</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="paket">Pilih paket</label>
+            <select id="paket" name="paket" required>
+              <option value="" disabled selected>Pilih salah satu paket</option>
+              <option value="ngopi">Ngopi &amp; ngobrol — Rp150rb</option>
+              <option value="jalan">Jalan seharian — Rp350rb</option>
+              <option value="acara">Teman acara — Rp500rb</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="cerita">Ceritakan rencanamu <span>(opsional)</span></label>
+            <textarea id="cerita" name="cerita" rows="3" placeholder="Aktivitas, tanggal, atau hal yang perlu kami tahu..."></textarea>
+          </div>
+          <button class="button button-primary form-submit" type="submit">Kirim rencana <span aria-hidden="true">→</span></button>
+          <p class="form-disclaimer">Demo belajar saja — formulir ini belum mengirim atau menyimpan data.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer menutup halaman dan mengingatkan bahwa konten ini adalah proyek demo. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">♡</span>Teman<span>Kencan</span></a>
+      <p>Website demo untuk belajar HTML &amp; CSS · 2026</p>
+      <a class="back-top" href="#home">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
